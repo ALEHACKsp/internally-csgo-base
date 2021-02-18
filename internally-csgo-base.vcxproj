@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="beta|Win32">
+      <Configuration>beta</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="beta|x64">
+      <Configuration>beta</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="free|Win32">
+      <Configuration>free</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="free|x64">
+      <Configuration>free</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{AF041675-F00D-4A72-B40F-78D0C4BB72D9}</ProjectGuid>
+    <RootNamespace>internally-csgo-base</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <ProjectName>internally-csgo-base</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='beta|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='free|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='beta|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='free|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='beta|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='free|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='beta|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='free|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Include;D:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Lib\x86;D:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Lib\x86;$(LibraryPath)</LibraryPath>
+    <OutDir>.\output\debug\</OutDir>
+    <IntDir>.\intermediates\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Include;D:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Lib\x86;D:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Lib\x86;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)released\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)unnecessary\$(ProjectName)\$(Configuration)\</IntDir>
+    <LibraryPath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Lib\x86;$(LibraryPath)</LibraryPath>
+    <IncludePath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Include;$(IncludePath)</IncludePath>
+    <TargetName>internally-csgo-base</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LibraryPath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Lib\x86;$(LibraryPath)</LibraryPath>
+    <IncludePath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='beta|Win32'">
+    <OutDir>.\release</OutDir>
+    <IntDir>.\outable\</IntDir>
+    <LibraryPath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Lib\x86;$(LibraryPath)</LibraryPath>
+    <IncludePath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='free|Win32'">
+    <OutDir>.\release</OutDir>
+    <IntDir>.\outable\</IntDir>
+    <LibraryPath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Lib\x86;$(LibraryPath)</LibraryPath>
+    <IncludePath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='beta|x64'">
+    <LibraryPath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Lib\x86;$(LibraryPath)</LibraryPath>
+    <IncludePath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='free|x64'">
+    <LibraryPath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Lib\x86;$(LibraryPath)</LibraryPath>
+    <IncludePath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;/std:c++latest;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions>/std:c++latest %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;/std:c++latest;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions>/std:c++latest %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <Optimization>MinSpace</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions>/std:c++latest %(AdditionalOptions)</AdditionalOptions>
+      <FavorSizeOrSpeed>Size</FavorSizeOrSpeed>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <LanguageStandard>Default</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <Optimization>MinSpace</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions>/std:c++latest %(AdditionalOptions)</AdditionalOptions>
+      <FavorSizeOrSpeed>Size</FavorSizeOrSpeed>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='beta|Win32'">
+    <ClCompile>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <Optimization>MinSpace</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions>/std:c++latest %(AdditionalOptions)</AdditionalOptions>
+      <FavorSizeOrSpeed>Size</FavorSizeOrSpeed>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='free|Win32'">
+    <ClCompile>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <Optimization>MinSpace</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions>/std:c++latest %(AdditionalOptions)</AdditionalOptions>
+      <FavorSizeOrSpeed>Size</FavorSizeOrSpeed>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='beta|x64'">
+    <ClCompile>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <Optimization>MinSpace</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions>/std:c++latest %(AdditionalOptions)</AdditionalOptions>
+      <FavorSizeOrSpeed>Size</FavorSizeOrSpeed>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='free|x64'">
+    <ClCompile>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <Optimization>MinSpace</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions>/std:c++latest %(AdditionalOptions)</AdditionalOptions>
+      <FavorSizeOrSpeed>Size</FavorSizeOrSpeed>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="csgo-sdk\math\math.cpp" />
+    <ClCompile Include="csgo-sdk\netvars\netvars.cpp" />
+    <ClCompile Include="csgo-sdk\vectors\vector3d.cpp" />
+    <ClCompile Include="csgo-sdk\vectors\view_matrix.cpp" />
+    <ClCompile Include="drawings\drawings.cpp" />
+    <ClCompile Include="hooks\hooks.cpp" />
+    <ClCompile Include="hooks\minhooks\buffer.c" />
+    <ClCompile Include="hooks\minhooks\hde\hde32.c" />
+    <ClCompile Include="hooks\minhooks\hde\hde64.c" />
+    <ClCompile Include="hooks\minhooks\hook.c" />
+    <ClCompile Include="hooks\minhooks\trampoline.c" />
+    <ClCompile Include="interfaces\interfaces.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="utilities\hook.cpp" />
+    <ClCompile Include="utilities\utilities.cpp" />
+    <ClCompile Include="utility\md5.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="csgo-sdk\classes\client_class.hpp" />
+    <ClInclude Include="csgo-sdk\classes\collideable.hpp" />
+    <ClInclude Include="csgo-sdk\classes\convar.hpp" />
+    <ClInclude Include="csgo-sdk\classes\c_global_vars_base.hpp" />
+    <ClInclude Include="csgo-sdk\classes\c_usercmd.hpp" />
+    <ClInclude Include="csgo-sdk\classes\engine_sounds.hpp" />
+    <ClInclude Include="csgo-sdk\classes\glow_manager.hpp" />
+    <ClInclude Include="csgo-sdk\classes\imageformats.h" />
+    <ClInclude Include="csgo-sdk\classes\iv_debug_overlay.hpp" />
+    <ClInclude Include="csgo-sdk\classes\iv_effects.hpp" />
+    <ClInclude Include="csgo-sdk\classes\iv_engine_client.hpp" />
+    <ClInclude Include="csgo-sdk\classes\iv_model_info.hpp" />
+    <ClInclude Include="csgo-sdk\classes\iv_model_render.hpp" />
+    <ClInclude Include="csgo-sdk\classes\iv_render_beams.hpp" />
+    <ClInclude Include="csgo-sdk\classes\i_app_system.hpp" />
+    <ClInclude Include="csgo-sdk\classes\i_base_client_dll.hpp" />
+    <ClInclude Include="csgo-sdk\classes\i_client_entity_list.hpp" />
+    <ClInclude Include="csgo-sdk\classes\i_client_mode.hpp" />
+    <ClInclude Include="csgo-sdk\classes\i_client_state.hpp" />
+    <ClInclude Include="csgo-sdk\classes\i_console.hpp" />
+    <ClInclude Include="csgo-sdk\classes\i_game_event_manager.hpp" />
+    <ClInclude Include="csgo-sdk\classes\i_input.hpp" />
+    <ClInclude Include="csgo-sdk\classes\i_input_system.hpp" />
+    <ClInclude Include="csgo-sdk\classes\i_localize.hpp" />
+    <ClInclude Include="csgo-sdk\classes\i_material_system.hpp" />
+    <ClInclude Include="csgo-sdk\classes\i_panel.hpp" />
+    <ClInclude Include="csgo-sdk\classes\i_player_movement.hpp" />
+    <ClInclude Include="csgo-sdk\classes\i_render_view.hpp" />
+    <ClInclude Include="csgo-sdk\classes\i_surface.hpp" />
+    <ClInclude Include="csgo-sdk\classes\i_trace.hpp" />
+    <ClInclude Include="csgo-sdk\classes\i_weapon_system_dumped.hpp" />
+    <ClInclude Include="csgo-sdk\classes\net_channel.hpp" />
+    <ClInclude Include="csgo-sdk\classes\recv_props.hpp" />
+    <ClInclude Include="csgo-sdk\classes\studio.hpp" />
+    <ClInclude Include="csgo-sdk\classes\view_setup.h" />
+    <ClInclude Include="csgo-sdk\c_base_entity.hpp" />
+    <ClInclude Include="csgo-sdk\include_sdk.hpp" />
+    <ClInclude Include="csgo-sdk\math\math.hpp" />
+    <ClInclude Include="csgo-sdk\math\QAngle.hpp" />
+    <ClInclude Include="csgo-sdk\netvars\netvars.hpp" />
+    <ClInclude Include="csgo-sdk\structures\dlight.hpp" />
+    <ClInclude Include="csgo-sdk\structures\materials.hpp" />
+    <ClInclude Include="csgo-sdk\structures\models.hpp" />
+    <ClInclude Include="csgo-sdk\structures\vertex_t.hpp" />
+    <ClInclude Include="csgo-sdk\structures\weaponinfo.hpp" />
+    <ClInclude Include="csgo-sdk\vectors\utl_vector.hpp" />
+    <ClInclude Include="csgo-sdk\vectors\vector2d.hpp" />
+    <ClInclude Include="csgo-sdk\vectors\vector3d.hpp" />
+    <ClInclude Include="csgo-sdk\vectors\view_matrix.hpp" />
+    <ClInclude Include="drawings\drawings.hpp" />
+    <ClInclude Include="hooks\hooks.hpp" />
+    <ClInclude Include="hooks\minhooks\buffer.h" />
+    <ClInclude Include="hooks\minhooks\hde\hde32.h" />
+    <ClInclude Include="hooks\minhooks\hde\hde64.h" />
+    <ClInclude Include="hooks\minhooks\hde\pstdint.h" />
+    <ClInclude Include="hooks\minhooks\hde\table32.h" />
+    <ClInclude Include="hooks\minhooks\hde\table64.h" />
+    <ClInclude Include="hooks\minhooks\minhook.h" />
+    <ClInclude Include="hooks\minhooks\trampoline.h" />
+    <ClInclude Include="includes.hpp" />
+    <ClInclude Include="interfaces\interfaces.hpp" />
+    <ClInclude Include="steam-sdk\isteamapplist.h" />
+    <ClInclude Include="steam-sdk\isteamapps.h" />
+    <ClInclude Include="steam-sdk\isteamappticket.h" />
+    <ClInclude Include="steam-sdk\isteamclient.h" />
+    <ClInclude Include="steam-sdk\isteamcontroller.h" />
+    <ClInclude Include="steam-sdk\isteamfriends.h" />
+    <ClInclude Include="steam-sdk\isteamgamecoordinator.h" />
+    <ClInclude Include="steam-sdk\isteamgameserver.h" />
+    <ClInclude Include="steam-sdk\isteamgameserverstats.h" />
+    <ClInclude Include="steam-sdk\isteamhtmlsurface.h" />
+    <ClInclude Include="steam-sdk\isteamhttp.h" />
+    <ClInclude Include="steam-sdk\isteaminventory.h" />
+    <ClInclude Include="steam-sdk\isteammasterserverupdater.h" />
+    <ClInclude Include="steam-sdk\isteammatchmaking.h" />
+    <ClInclude Include="steam-sdk\isteammusic.h" />
+    <ClInclude Include="steam-sdk\isteammusicremote.h" />
+    <ClInclude Include="steam-sdk\isteamnetworking.h" />
+    <ClInclude Include="steam-sdk\isteamparentalsettings.h" />
+    <ClInclude Include="steam-sdk\isteamps3overlayrenderer.h" />
+    <ClInclude Include="steam-sdk\isteamremotestorage.h" />
+    <ClInclude Include="steam-sdk\isteamscreenshots.h" />
+    <ClInclude Include="steam-sdk\isteamugc.h" />
+    <ClInclude Include="steam-sdk\isteamuser.h" />
+    <ClInclude Include="steam-sdk\isteamuserstats.h" />
+    <ClInclude Include="steam-sdk\isteamutils.h" />
+    <ClInclude Include="steam-sdk\isteamvideo.h" />
+    <ClInclude Include="steam-sdk\matchmakingtypes.h" />
+    <ClInclude Include="steam-sdk\steamclientpublic.h" />
+    <ClInclude Include="steam-sdk\steamencryptedappticket.h" />
+    <ClInclude Include="steam-sdk\steamhttpenums.h" />
+    <ClInclude Include="steam-sdk\steamps3params.h" />
+    <ClInclude Include="steam-sdk\steamtypes.h" />
+    <ClInclude Include="steam-sdk\steamuniverse.h" />
+    <ClInclude Include="steam-sdk\steam_api.h" />
+    <ClInclude Include="steam-sdk\steam_api_flat.h" />
+    <ClInclude Include="steam-sdk\steam_api_internal.h" />
+    <ClInclude Include="steam-sdk\steam_gameserver.h" />
+    <ClInclude Include="utilities\fnv.hpp" />
+    <ClInclude Include="utilities\hook.hpp" />
+    <ClInclude Include="utilities\utilities.hpp" />
+    <ClInclude Include="utility\color.hpp" />
+    <ClInclude Include="utility\md5.hpp" />
+    <ClInclude Include="utility\singleton.hpp" />
+    <ClInclude Include="utility\xorstr.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="steam-sdk\steam_api.json" />
+    <None Include="steam-sdk\steam_api_interop.cs" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
